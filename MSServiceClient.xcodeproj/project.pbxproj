@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABE7DBC61963CFBA00E751AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7DBC51963CFBA00E751AD /* Foundation.framework */; };
+		ABE7DBC81963CFBA00E751AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7DBC71963CFBA00E751AD /* CoreGraphics.framework */; };
+		ABE7DBCA1963CFBA00E751AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7DBC91963CFBA00E751AD /* UIKit.framework */; };
+		ABE7DBD01963CFBA00E751AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABE7DBCE1963CFBA00E751AD /* InfoPlist.strings */; };
+		ABE7DBD21963CFBA00E751AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DBD11963CFBA00E751AD /* main.m */; };
+		ABE7DBD61963CFBA00E751AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DBD51963CFBA00E751AD /* AppDelegate.m */; };
+		ABE7DBD81963CFBA00E751AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE7DBD71963CFBA00E751AD /* Images.xcassets */; };
+		ABE7DBDF1963CFBB00E751AD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7DBDE1963CFBB00E751AD /* XCTest.framework */; };
+		ABE7DBE01963CFBB00E751AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7DBC51963CFBA00E751AD /* Foundation.framework */; };
+		ABE7DBE11963CFBB00E751AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE7DBC91963CFBA00E751AD /* UIKit.framework */; };
+		ABE7DBE91963CFBB00E751AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABE7DBE71963CFBB00E751AD /* InfoPlist.strings */; };
+		ABE7DBEB1963CFBB00E751AD /* MSServiceClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DBEA1963CFBB00E751AD /* MSServiceClientTests.m */; };
+		ABE7DBFA1963D5B600E751AD /* MSServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DBF61963D5B600E751AD /* MSServiceClient.m */; };
+		ABE7DBFB1963D5B600E751AD /* MSServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DBF91963D5B600E751AD /* MSServiceOperation.m */; };
+		ABE7DC011963D61600E751AD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE7DC001963D61600E751AD /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABE7DBE21963CFBB00E751AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABE7DBBA1963CFBA00E751AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE7DBC11963CFBA00E751AD;
+			remoteInfo = MSServiceClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABE7DBC21963CFBA00E751AD /* MSServiceClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSServiceClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE7DBC51963CFBA00E751AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABE7DBC71963CFBA00E751AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABE7DBC91963CFBA00E751AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABE7DBCD1963CFBA00E751AD /* MSServiceClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSServiceClient-Info.plist"; sourceTree = "<group>"; };
+		ABE7DBCF1963CFBA00E751AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABE7DBD11963CFBA00E751AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABE7DBD31963CFBA00E751AD /* MSServiceClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSServiceClient-Prefix.pch"; sourceTree = "<group>"; };
+		ABE7DBD41963CFBA00E751AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABE7DBD51963CFBA00E751AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABE7DBD71963CFBA00E751AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABE7DBDD1963CFBB00E751AD /* MSServiceClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSServiceClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE7DBDE1963CFBB00E751AD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ABE7DBE61963CFBB00E751AD /* MSServiceClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSServiceClientTests-Info.plist"; sourceTree = "<group>"; };
+		ABE7DBE81963CFBB00E751AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABE7DBEA1963CFBB00E751AD /* MSServiceClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSServiceClientTests.m; sourceTree = "<group>"; };
+		ABE7DBF51963D5B600E751AD /* MSServiceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSServiceClient.h; sourceTree = "<group>"; };
+		ABE7DBF61963D5B600E751AD /* MSServiceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSServiceClient.m; sourceTree = "<group>"; };
+		ABE7DBF71963D5B600E751AD /* MSServiceClientDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSServiceClientDefines.h; sourceTree = "<group>"; };
+		ABE7DBF81963D5B600E751AD /* MSServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSServiceOperation.h; sourceTree = "<group>"; };
+		ABE7DBF91963D5B600E751AD /* MSServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSServiceOperation.m; sourceTree = "<group>"; };
+		ABE7DBFF1963D61600E751AD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		ABE7DC001963D61600E751AD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABE7DBBF1963CFBA00E751AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7DBC81963CFBA00E751AD /* CoreGraphics.framework in Frameworks */,
+				ABE7DBCA1963CFBA00E751AD /* UIKit.framework in Frameworks */,
+				ABE7DBC61963CFBA00E751AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE7DBDA1963CFBB00E751AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7DBDF1963CFBB00E751AD /* XCTest.framework in Frameworks */,
+				ABE7DBE11963CFBB00E751AD /* UIKit.framework in Frameworks */,
+				ABE7DBE01963CFBB00E751AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABE7DBB91963CFBA00E751AD = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBCB1963CFBA00E751AD /* MSServiceClient */,
+				ABE7DBE41963CFBB00E751AD /* MSServiceClientTests */,
+				ABE7DBC41963CFBA00E751AD /* Frameworks */,
+				ABE7DBC31963CFBA00E751AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABE7DBC31963CFBA00E751AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBC21963CFBA00E751AD /* MSServiceClient.app */,
+				ABE7DBDD1963CFBB00E751AD /* MSServiceClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABE7DBC41963CFBA00E751AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBC51963CFBA00E751AD /* Foundation.framework */,
+				ABE7DBC71963CFBA00E751AD /* CoreGraphics.framework */,
+				ABE7DBC91963CFBA00E751AD /* UIKit.framework */,
+				ABE7DBDE1963CFBB00E751AD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABE7DBCB1963CFBA00E751AD /* MSServiceClient */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBD41963CFBA00E751AD /* AppDelegate.h */,
+				ABE7DBD51963CFBA00E751AD /* AppDelegate.m */,
+				ABE7DBF71963D5B600E751AD /* MSServiceClientDefines.h */,
+				ABE7DC041963D98900E751AD /* Service Client */,
+				ABE7DC031963D97A00E751AD /* Service Operation */,
+				ABE7DC021963D96E00E751AD /* Reachability */,
+				ABE7DBD71963CFBA00E751AD /* Images.xcassets */,
+				ABE7DBCC1963CFBA00E751AD /* Supporting Files */,
+			);
+			path = MSServiceClient;
+			sourceTree = "<group>";
+		};
+		ABE7DBCC1963CFBA00E751AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBCD1963CFBA00E751AD /* MSServiceClient-Info.plist */,
+				ABE7DBCE1963CFBA00E751AD /* InfoPlist.strings */,
+				ABE7DBD11963CFBA00E751AD /* main.m */,
+				ABE7DBD31963CFBA00E751AD /* MSServiceClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABE7DBE41963CFBB00E751AD /* MSServiceClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBEA1963CFBB00E751AD /* MSServiceClientTests.m */,
+				ABE7DBE51963CFBB00E751AD /* Supporting Files */,
+			);
+			path = MSServiceClientTests;
+			sourceTree = "<group>";
+		};
+		ABE7DBE51963CFBB00E751AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBE61963CFBB00E751AD /* MSServiceClientTests-Info.plist */,
+				ABE7DBE71963CFBB00E751AD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABE7DC021963D96E00E751AD /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBFF1963D61600E751AD /* Reachability.h */,
+				ABE7DC001963D61600E751AD /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		ABE7DC031963D97A00E751AD /* Service Operation */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBF81963D5B600E751AD /* MSServiceOperation.h */,
+				ABE7DBF91963D5B600E751AD /* MSServiceOperation.m */,
+			);
+			name = "Service Operation";
+			sourceTree = "<group>";
+		};
+		ABE7DC041963D98900E751AD /* Service Client */ = {
+			isa = PBXGroup;
+			children = (
+				ABE7DBF51963D5B600E751AD /* MSServiceClient.h */,
+				ABE7DBF61963D5B600E751AD /* MSServiceClient.m */,
+			);
+			name = "Service Client";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABE7DBC11963CFBA00E751AD /* MSServiceClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE7DBEE1963CFBB00E751AD /* Build configuration list for PBXNativeTarget "MSServiceClient" */;
+			buildPhases = (
+				ABE7DBBE1963CFBA00E751AD /* Sources */,
+				ABE7DBBF1963CFBA00E751AD /* Frameworks */,
+				ABE7DBC01963CFBA00E751AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSServiceClient;
+			productName = MSServiceClient;
+			productReference = ABE7DBC21963CFBA00E751AD /* MSServiceClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABE7DBDC1963CFBB00E751AD /* MSServiceClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE7DBF11963CFBB00E751AD /* Build configuration list for PBXNativeTarget "MSServiceClientTests" */;
+			buildPhases = (
+				ABE7DBD91963CFBB00E751AD /* Sources */,
+				ABE7DBDA1963CFBB00E751AD /* Frameworks */,
+				ABE7DBDB1963CFBB00E751AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABE7DBE31963CFBB00E751AD /* PBXTargetDependency */,
+			);
+			name = MSServiceClientTests;
+			productName = MSServiceClientTests;
+			productReference = ABE7DBDD1963CFBB00E751AD /* MSServiceClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABE7DBBA1963CFBA00E751AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Madhavi;
+				TargetAttributes = {
+					ABE7DBDC1963CFBB00E751AD = {
+						TestTargetID = ABE7DBC11963CFBA00E751AD;
+					};
+				};
+			};
+			buildConfigurationList = ABE7DBBD1963CFBA00E751AD /* Build configuration list for PBXProject "MSServiceClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABE7DBB91963CFBA00E751AD;
+			productRefGroup = ABE7DBC31963CFBA00E751AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABE7DBC11963CFBA00E751AD /* MSServiceClient */,
+				ABE7DBDC1963CFBB00E751AD /* MSServiceClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABE7DBC01963CFBA00E751AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7DBD01963CFBA00E751AD /* InfoPlist.strings in Resources */,
+				ABE7DBD81963CFBA00E751AD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE7DBDB1963CFBB00E751AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7DBE91963CFBB00E751AD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABE7DBBE1963CFBA00E751AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7DBD61963CFBA00E751AD /* AppDelegate.m in Sources */,
+				ABE7DBD21963CFBA00E751AD /* main.m in Sources */,
+				ABE7DBFB1963D5B600E751AD /* MSServiceOperation.m in Sources */,
+				ABE7DBFA1963D5B600E751AD /* MSServiceClient.m in Sources */,
+				ABE7DC011963D61600E751AD /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE7DBD91963CFBB00E751AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE7DBEB1963CFBB00E751AD /* MSServiceClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABE7DBE31963CFBB00E751AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABE7DBC11963CFBA00E751AD /* MSServiceClient */;
+			targetProxy = ABE7DBE21963CFBB00E751AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABE7DBCE1963CFBA00E751AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE7DBCF1963CFBA00E751AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABE7DBE71963CFBB00E751AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE7DBE81963CFBB00E751AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABE7DBEC1963CFBB00E751AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABE7DBED1963CFBB00E751AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABE7DBEF1963CFBB00E751AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSServiceClient/MSServiceClient-Prefix.pch";
+				INFOPLIST_FILE = "MSServiceClient/MSServiceClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABE7DBF01963CFBB00E751AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSServiceClient/MSServiceClient-Prefix.pch";
+				INFOPLIST_FILE = "MSServiceClient/MSServiceClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ABE7DBF21963CFBB00E751AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MSServiceClient.app/MSServiceClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSServiceClient/MSServiceClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MSServiceClientTests/MSServiceClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ABE7DBF31963CFBB00E751AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MSServiceClient.app/MSServiceClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSServiceClient/MSServiceClient-Prefix.pch";
+				INFOPLIST_FILE = "MSServiceClientTests/MSServiceClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABE7DBBD1963CFBA00E751AD /* Build configuration list for PBXProject "MSServiceClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE7DBEC1963CFBB00E751AD /* Debug */,
+				ABE7DBED1963CFBB00E751AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE7DBEE1963CFBB00E751AD /* Build configuration list for PBXNativeTarget "MSServiceClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE7DBEF1963CFBB00E751AD /* Debug */,
+				ABE7DBF01963CFBB00E751AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ABE7DBF11963CFBB00E751AD /* Build configuration list for PBXNativeTarget "MSServiceClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE7DBF21963CFBB00E751AD /* Debug */,
+				ABE7DBF31963CFBB00E751AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABE7DBBA1963CFBA00E751AD /* Project object */;
+}
